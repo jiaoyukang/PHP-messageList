@@ -5,7 +5,7 @@ class MysqliObj{
      * @return mysqli
      */
     public function initMysqli(){
-        $mysqli = new \mysqli("39.104.59.238", "qinjia", "qinjia123", "aaa");
+        $mysqli = new \mysqli("xxx.xxx.xxx.xxx", "your_username", "your_password", "your_dbname");
         if ($mysqli->connect_errno) die($mysqli->connect_error);
         $mysqli->set_charset("utf8");
         return $mysqli;
